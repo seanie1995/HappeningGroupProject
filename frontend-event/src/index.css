@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-mplus;
+  /* background-color: #FA812F; */
+
+}
+
+.event-card-name {
+  color: black;
+}

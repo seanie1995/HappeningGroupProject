@@ -1,0 +1,55 @@
+.swipe-menu {
+    display: flex;                 
+    flex-direction: column;        
+    justify-content: center;       
+    align-items: center;       
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    min-height: 100vh;
+    background-color: #664d63;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding:10px;
+}
+.sidebar_buttons {
+    margin: auto;
+
+    align-items: center;           
+    height: 100%;   
+    width: 100%;               
+}
+.sidebar_footer{
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar_settings {
+    margin-top: auto;
+    align-self:flex-start;
+    height: 100%;
+    width: 70%;
+    
+}
+.sidebar button {
+    width: 99%;                   
+    margin: 12px 0;               
+    
+}
+.sidebar_info{
+    align-items: center;
+    height: 10%;
+    width: 30%;
+}
+
+.swipe-menu.open {
+    width: 47%;
+}
