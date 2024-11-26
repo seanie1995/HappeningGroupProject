@@ -6,7 +6,7 @@ import UserPage from "./pages/MainUserPage";
 import FriendsAll from "./components/FriendsAll";
 import EditProfile from "./components/EditProfile";
 import { Link } from "react-router-dom";
-import LandingPage from './pages/LandingPage'
+import LandingPage from './pages/MainLandingPage'
 import AdminPage from "./pages/adminPage";
 import AboutUs from "./components/AboutUs";
 import HamburgerLayout from "./components/HamburgerLayout"; // New layout component
