@@ -18,10 +18,12 @@ const EventPage = () => {
 
     const eventsPerPage = 7;
 
+    const baseUrl = "https://happservice4.azurewebsites.net"
+
   const ticketMasterEndpoint =
-    "https://localhost:7261/TicketMasterAPI/getEvents";
+    "https://happservice4.azurewebsites.net/TicketMasterAPI/getEvents";
   const visitStockholmEndpoint =
-    "https://localhost:7261/VisitStockholmAPI/getEvents";
+    "https://happservice4.azurewebsites.net/VisitStockholmAPI/getEvents";
   const KBEventsEndpoint = "https://localhost:7621/KBEventAPI/getEvents";
 
     const normalizeImageUrl = (url) => {

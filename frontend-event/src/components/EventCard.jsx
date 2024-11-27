@@ -15,14 +15,14 @@ const EventCard = ({ event, onFavoriteToggle }) => {
     const theId = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier";
     const userId = decodedToken[theId];
 
-    const addEventToUserEndpoint = `https://localhost:7261/api/User/${userId}/event`;
+    const addEventToUserEndpoint = `https://happservice4.azurewebsites.net/api/User/${userId}/event`;
     const removeEventFromuser = `https://localhost:7261/api/User/${userId}/event/${event.id}`;
 
     // Fetch user favorites when the component mounts or userId changes
     useEffect(() => {
         const fetchFavorites = async () => {
             try {
-                const response = await axios.get(`https://localhost:7261/api/User/${userId}/event`);
+                const response = await axios.get(`https://happservice4.azurewebsites.net/api/User/${userId}/event`);
                 const userFavorites = response.data; console.log
 
                 setFavoriteEvents(userFavorites);
@@ -74,7 +74,7 @@ const EventCard = ({ event, onFavoriteToggle }) => {
         } else {
             try {
                 const eventToDelete = userFavorites.find(e => e.eventId === event.eventId);
-                const response = await fetch(`https://localhost:7261/api/User/${userId}/event/${eventToDelete.id}`, {
+                const response = await fetch(`https://happservice4.azurewebsites.net/api/User/${userId}/event/${eventToDelete.id}`, {
                     method: 'DELETE',
                 });
 

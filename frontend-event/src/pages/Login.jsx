@@ -12,7 +12,7 @@ const Login = () => {
   const [view, setView] = useState("login");
 
   const navigate = useNavigate();
-  const apiBaseURL = "https://localhost:7261/api/Auth/";
+  const apiBaseURL = "https://happservice4.azurewebsites.net/api/Auth/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
